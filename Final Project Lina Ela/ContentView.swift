@@ -12,17 +12,18 @@ struct ContentView: View {
         NavigationView{
         VStack{
             Text(" Travel Planner ")
-            .background(RoundedRectangle(cornerRadius: 7).fill(.yellow))
+                .background(RoundedRectangle(cornerRadius: 7).fill(.yellow))
             .font(.title)
             .padding()
         Spacer()
             
         Text(" Spot Picker")
-        Text(" AirBnB's ")
-        Text(" Food ")
-        Text(" Tourist Attractions ")
-        Text(" Packing List ")
+        Text(" AirBnB's & Hotels ")
+        Text(" Dining ")
+        Text(" Attractions ")
+        Text(" Packing CheckList ")
         }
+            
         
         }
     }
