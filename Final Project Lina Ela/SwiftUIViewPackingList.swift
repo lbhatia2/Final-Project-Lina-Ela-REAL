@@ -17,20 +17,48 @@ struct SwiftUIViewPackingList: View {
     @State var checklistItems = [checkListItem(name: "Pack", isChecked: false), checkListItem(name: "Do stuff", isChecked: false)]
     
     var body: some View {
-        NavigationView{
-            List{
-                ForEach(checklistItems) { checklistItems in
-                    HStack{
-                        Text(checklistItem.name)
-                        Spacer()
-                        Text(checklistItem.isChecked ? "✅" : "💭")
-                    }
-                    .onTapGesture {
-                        
-                    }
-                }
+      NavigationView {
+        List {
+          ForEach(checklistItems) { checklistItem in
+            HStack {
+              Text(checklistItem.name)
+              Spacer()
+              Text(checklistItem.isChecked ? "✅" : "◻︎")
             }
+            .background(Color.white) // This makes the entire row clickable
+            .onTapGesture {
+              if let matchingIndex =
+                self.checklistItems.firstIndex(where: { $0.id == checklistItem.id }) {
+                self.checklistItems[matchingIndex].isChecked.toggle()
+              }
+              self.printChecklistContents()
+            }
+          }
+          .onDelete(perform: deleteListItem)
+          .onMove(perform: moveListItem)
         }
+        .navigationBarItems(trailing: EditButton())
+        .navigationBarTitle("Packing List")
+        .onAppear() {
+          self.printChecklistContents()
+        }
+      }
+    }
+
+    func printChecklistContents() {
+        for item in checklistItems {
+            print(item)
+        }
+    }
+    
+    func deleteListItem(whichElement: IndexSet) {
+        checklistItems.remove(atOffsets: whichElement)
+        printChecklistContents()
+    }
+    
+    func moveListItem(whichElement: IndexSet, destination: Int) {
+        checklistItems.move(fromOffsets: whichElement, toOffset: destination)
+        printChecklistContents()
     }
 }
 
