@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
         VStack{
-            Text(" Travel Planner ")
+            Text(" Bon Voyage")
                 .background(RoundedRectangle(cornerRadius: 7).fill(.yellow))
             .font(.title)
             .padding()
@@ -38,6 +38,12 @@ struct ContentView: View {
                 .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
         Spacer()
         }
+        .background(
+            Image("Reverse")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+        )
             
         
         }
