@@ -12,9 +12,12 @@ struct ContentView: View {
         NavigationView{
         VStack{
             Text(" Bon Voyage")
-                .background(RoundedRectangle(cornerRadius: 7).fill(.yellow))
-            .font(.title)
-            .padding()
+                .fontWeight(.ultraLight)
+                .padding(.all, 24.139)
+                .background(RoundedRectangle(cornerRadius: 7).fill(Color(red: 0.185, green: 0.289, blue: 0.431)))
+                .foregroundColor(.white)
+                .font(.title)
+                
         Spacer()
             
             NavigationLink(destination: {
@@ -42,11 +45,11 @@ struct ContentView: View {
             NavigationLink(destination: {
             SwiftUIViewFood()
             }, label: {
-                Text("Food")
+                Text("Dining")
                     .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.956, green: 0.916, blue: 0.869)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.122, green: 0.426, blue: 0.511)))
                 
             })
             
