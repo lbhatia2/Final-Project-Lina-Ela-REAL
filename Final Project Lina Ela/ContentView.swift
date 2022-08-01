@@ -17,25 +17,62 @@ struct ContentView: View {
             .padding()
         Spacer()
             
-        Text(" Location Picker ")
-                .background(RoundedRectangle(cornerRadius: 4).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
-                .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                .padding()
-        Text(" AirBnB's ")
-                .background(RoundedRectangle(cornerRadius: 4).fill(Color(red: 0.185, green: 0.289, blue: 0.431)))
-                .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                .padding()
-        Text(" Food ")
-                .background(RoundedRectangle(cornerRadius: 4).fill(Color(red: 0.956, green: 0.916, blue: 0.869)))
-                .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                .padding()
-        Text(" Popular Locations ")
-                .background(RoundedRectangle(cornerRadius: 4).fill(Color(red: 0.936, green: 0.546, blue: 0.453)))
-                .foregroundColor(Color.init(red: 255, green: 255, blue: 255))
-                .padding()
-        Text(" Packing List ")
-                .background(RoundedRectangle(cornerRadius: 4).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
-                .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+            NavigationLink(destination: {
+            SwiftUIViewLocationPicker()
+            }, label: {
+                Text("Location Picker")
+                    .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                
+            })
+            
+            NavigationLink(destination: {
+            SwiftUIViewAirBNBs()
+            }, label: {
+                Text("AirBnB's and Hotels")
+                    .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.546, blue: 0.453)))
+                
+            })
+            
+            NavigationLink(destination: {
+            SwiftUIViewFood()
+            }, label: {
+                Text("Food")
+                    .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.956, green: 0.916, blue: 0.869)))
+                
+            })
+            
+            NavigationLink(destination: {
+            SwiftUIViewAttractions()
+            }, label: {
+                Text("Popular Locations")
+                    .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.546, blue: 0.453)))
+                
+            })
+            
+            NavigationLink(destination: {
+            SwiftUIViewPackingList()
+            }, label: {
+                Text("Packing List")
+                    .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                
+            })
+            
+         
         Spacer()
         }
         .background(
