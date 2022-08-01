@@ -17,11 +17,21 @@ struct ContentView: View {
             .padding()
         Spacer()
             
-        Text(" Spot Picker")
+        Text(" Spot Picker ")
+                .background(RoundedRectangle(cornerRadius: 4).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                .padding()
         Text(" AirBnB's ")
+                .background(RoundedRectangle(cornerRadius: 4).fill(Color(red: 0.185, green: 0.289, blue: 0.431)))
+                .padding()
         Text(" Food ")
+                .background(RoundedRectangle(cornerRadius: 4).fill(.yellow))
+                .padding()
         Text(" Tourist Attractions ")
+                .background(RoundedRectangle(cornerRadius: 4).fill(.pink))
+                .padding()
         Text(" Packing List ")
+                .background(RoundedRectangle(cornerRadius: 4).fill(.pink))
+        Spacer()
         }
         
         }
