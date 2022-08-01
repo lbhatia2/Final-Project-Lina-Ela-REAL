@@ -11,6 +11,11 @@
 		B096AF2D2898163900A4E184 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF2C2898163900A4E184 /* ContentView.swift */; };
 		B096AF2F2898163A00A4E184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B096AF2E2898163A00A4E184 /* Assets.xcassets */; };
 		B096AF322898163A00A4E184 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B096AF312898163A00A4E184 /* Preview Assets.xcassets */; };
+		B096AF3928982E0700A4E184 /* SwiftUIViewLocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF3828982E0700A4E184 /* SwiftUIViewLocationPicker.swift */; };
+		B096AF3B28982E2300A4E184 /* SwiftUIViewAirBNBs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF3A28982E2300A4E184 /* SwiftUIViewAirBNBs.swift */; };
+		B096AF3D28982E3000A4E184 /* SwiftUIViewFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF3C28982E3000A4E184 /* SwiftUIViewFood.swift */; };
+		B096AF3F28982E4300A4E184 /* SwiftUIViewAttractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF3E28982E4300A4E184 /* SwiftUIViewAttractions.swift */; };
+		B096AF4128982E4E00A4E184 /* SwiftUIViewPackingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF4028982E4E00A4E184 /* SwiftUIViewPackingList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		B096AF2C2898163900A4E184 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B096AF2E2898163A00A4E184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B096AF312898163A00A4E184 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B096AF3828982E0700A4E184 /* SwiftUIViewLocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewLocationPicker.swift; sourceTree = "<group>"; };
+		B096AF3A28982E2300A4E184 /* SwiftUIViewAirBNBs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAirBNBs.swift; sourceTree = "<group>"; };
+		B096AF3C28982E3000A4E184 /* SwiftUIViewFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFood.swift; sourceTree = "<group>"; };
+		B096AF3E28982E4300A4E184 /* SwiftUIViewAttractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAttractions.swift; sourceTree = "<group>"; };
+		B096AF4028982E4E00A4E184 /* SwiftUIViewPackingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewPackingList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				B096AF2A2898163900A4E184 /* Final_Project_Lina_ElaApp.swift */,
 				B096AF2C2898163900A4E184 /* ContentView.swift */,
+				B096AF4028982E4E00A4E184 /* SwiftUIViewPackingList.swift */,
+				B096AF3E28982E4300A4E184 /* SwiftUIViewAttractions.swift */,
+				B096AF3C28982E3000A4E184 /* SwiftUIViewFood.swift */,
+				B096AF3A28982E2300A4E184 /* SwiftUIViewAirBNBs.swift */,
+				B096AF3828982E0700A4E184 /* SwiftUIViewLocationPicker.swift */,
 				B096AF2E2898163A00A4E184 /* Assets.xcassets */,
 				B096AF302898163A00A4E184 /* Preview Content */,
 			);
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B096AF3928982E0700A4E184 /* SwiftUIViewLocationPicker.swift in Sources */,
+				B096AF3F28982E4300A4E184 /* SwiftUIViewAttractions.swift in Sources */,
 				B096AF2D2898163900A4E184 /* ContentView.swift in Sources */,
+				B096AF4128982E4E00A4E184 /* SwiftUIViewPackingList.swift in Sources */,
+				B096AF3B28982E2300A4E184 /* SwiftUIViewAirBNBs.swift in Sources */,
+				B096AF3D28982E3000A4E184 /* SwiftUIViewFood.swift in Sources */,
 				B096AF2B2898163900A4E184 /* Final_Project_Lina_ElaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
