@@ -30,6 +30,27 @@ struct SwiftUIViewCF: View {
         Image("innout")
                 .resizable()
         Spacer()
+            
+            VStack{
+                Text("Tourist Atrractions")
+                    .font(.title)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
+                    .padding()
+                
+                Text("Disneyland")
+                Image("disney")
+                        .resizable()
+                
+                Text("Golden Gate Bridge")
+                Image("ggb")
+                        .resizable()
+                
+                Text("Yosemite")
+                Image("yosemite")
+                    .resizable()
+                
+            }
                 
         }
     }

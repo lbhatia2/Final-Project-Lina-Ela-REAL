@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SwiftUIViewBBF: View {
+    private var numberOfImages = 3
     var body: some View {
         VStack{
         Text(" Popular Foods ")
@@ -31,16 +32,24 @@ struct SwiftUIViewBBF: View {
                 .resizable()
         Spacer()
             
-            HStack{
+            VStack{
                 Text("Tourist Atrractions")
                     .font(.title)
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
                     .padding()
                 
-                Text("")
-                Image("mahimahi")
+                Text("Lagoon Tour")
+                Image("LT")
                         .resizable()
+                
+                Text("Coral Gardens")
+                Image("coralG")
+                        .resizable()
+                
+                Text("Mt Otemanu")
+                Image("mo")
+                    .resizable()
                 
             }
                 

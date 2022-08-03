@@ -30,6 +30,27 @@ struct SwiftUIViewTF: View {
         Image("pkg")
                 .resizable()
         Spacer()
+            
+            VStack{
+                Text("Tourist Atrractions")
+                    .font(.title)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
+                    .padding()
+                
+                Text("Long Beach")
+                Image("T1")
+                        .resizable()
+                
+                Text("The Grand Palace")
+                Image("T2")
+                        .resizable()
+                
+                Text("Sunday Walking Street")
+                Image("T3")
+                    .resizable()
+                
+            }
                 
         }
     }

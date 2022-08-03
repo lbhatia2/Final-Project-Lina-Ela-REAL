@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
+            
         VStack{
+            
             Text(" Bon Voyage")
                 .fontWeight(.ultraLight)
                 .padding(.all, 24.139)

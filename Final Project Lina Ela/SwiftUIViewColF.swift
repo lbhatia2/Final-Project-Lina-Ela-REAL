@@ -30,6 +30,29 @@ struct SwiftUIViewColF: View {
         Image("hc")
                 .resizable()
         Spacer()
+            
+            VStack{
+                Text("Tourist Atrractions")
+                    .font(.title)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
+                    .padding()
+                
+                Text("")
+                Image("caya")
+                        .resizable()
+                
+                Text("Old Havana")
+                Image("oldhav")
+                        .resizable()
+                
+                Text("Varadero")
+                Image("varadero")
+                    .resizable()
+                
+            }
+            
+            
                 
         }
     }

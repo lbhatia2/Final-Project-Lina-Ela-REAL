@@ -31,6 +31,26 @@ struct SwiftUIViewCUBAF: View {
                 .resizable()
         Spacer()
                 
+            VStack{
+                Text("Tourist Atrractions")
+                    .font(.title)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
+                    .padding()
+                
+                Text("Caya-Coco")
+                Image("caya")
+                        .resizable()
+                
+                Text("Old Havana")
+                Image("oldhav")
+                        .resizable()
+                
+                Text("Varadero")
+                Image("varadero")
+                    .resizable()
+                
+            }
         }
     }
 }
