@@ -8,29 +8,43 @@
 import SwiftUI
 
 struct SwiftUIViewMF: View {
+    private var numberOfImages = 3
     var body: some View {
         VStack{
-        Text(" Popular Foods ")
-                .font(.title)
-                .padding()
+            Text(" Tourist Attractions ")
+                .padding(20)
                 .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
-                .padding()
-    
-        Spacer()
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImages) {num in Image("MT\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .padding()
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
+            }
             
-        Text("Hot Dog")
-        Image("hotdog")
-                .resizable()
-
-        Text(" Tart Cherries ")
-        Image("cherries")
-                .resizable()
+            Text(" Foods ")
+                .padding(20)
+                .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImages) {num in Image("MF\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .padding()
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
+            }
             
-        Text(" Chicken ")
-        Image("chicken")
-                .resizable()
-        Spacer()
-                
         }
     }
 }

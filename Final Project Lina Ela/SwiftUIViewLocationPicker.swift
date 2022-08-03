@@ -74,7 +74,7 @@ struct SwiftUIViewLocationPicker: View {
                     if type == "Beach" {
                         location = "Bora Bora"  // Hot, Relax, Beach
                     }
-                    location = "Miami"          // Hot, Relax, City
+                    location = "California"          // Hot, Relax, City
                 }
                 else {
                     if type == "Beach" {

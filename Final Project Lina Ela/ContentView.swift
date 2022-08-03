@@ -47,7 +47,7 @@ struct ContentView: View {
             NavigationLink(destination: {
             SwiftUIViewFood()
             }, label: {
-                Text("Dining")
+                Text("Popular Foods and Tourist Attractions")
                     .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
@@ -55,16 +55,16 @@ struct ContentView: View {
                 
             })
             
-            NavigationLink(destination: {
-            SwiftUIViewAttractions()
-            }, label: {
-                Text("Popular Locations")
-                    .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                        .font(.body)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.546, blue: 0.453)))
+         //   NavigationLink(destination: {
+          //  SwiftUIViewAttractions()
+           // }, label: {
+            //    Text("Popular Locations")
+                    //.foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+                     //   .font(.body)
+                      //  .padding()
+                      //  .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.546, blue: 0.453)))
                 
-            })
+           // })
             
             NavigationLink(destination: {
             SwiftUIViewPackingList()

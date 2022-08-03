@@ -8,50 +8,46 @@
 import SwiftUI
 
 struct SwiftUIViewTF: View {
+    private var numberOfImagesT = 3
+    private var numberOfImagesF = 3
     var body: some View {
         VStack{
-        Text(" Popular Foods ")
-                .font(.title)
+            Text(" Tourist Attractions ")
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
-                .padding()
-    
-        Spacer()
-            
-        Text("Pad Woon Sen (Stir-fried Glass Noodles) ")
-        Image("pws")
-                .resizable()
-
-        Text("Kway Teow (noodle soup) ")
-        Image("ktt")
-                .resizable()
-            
-        Text(" Pad Kra Prao ")
-        Image("pkg")
-                .resizable()
-        Spacer()
-            
-            VStack{
-                Text("Tourist Atrractions")
-                    .font(.title)
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImagesT) {num in Image("TT\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
                     .padding()
-                    .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
-                    .padding()
-                
-                Text("Long Beach")
-                Image("T1")
-                        .resizable()
-                
-                Text("The Grand Palace")
-                Image("T2")
-                        .resizable()
-                
-                Text("Sunday Walking Street")
-                Image("T3")
-                    .resizable()
-                
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
             }
-                
+            Spacer()
+            
+            Text(" Popular Foods")
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImagesF) {num in Image("TF\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .padding()
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
+            }
+            
+           Spacer()
         }
     }
 }

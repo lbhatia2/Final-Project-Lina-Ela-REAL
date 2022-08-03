@@ -8,30 +8,45 @@
 import SwiftUI
 
 struct SwiftUIViewAF: View {
+    private var numberOfImages = 3
     var body: some View {
         VStack{
-        Text(" Popular Foods ")
-                .font(.title)
-                .padding()
+            Text(" Tourist Attractions ")
+                .padding(20)
                 .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
-                .padding()
-    
-        Spacer()
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImages) {num in Image("AT\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .padding()
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
+            }
             
-        Text("Reindeer Sausage")
-        Image("RS")
-                .resizable()
-
-        Text("King Crab")
-        Image("crab")
-                .resizable()
+            Text(" Foods ")
+                .padding(20)
+                .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImages) {num in Image("AF\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .padding()
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
+            }
             
-        Text("Oysters")
-        Image("oysters")
-                .resizable()
-        Spacer()
-                
-        }    }
+        }
+    }
 }
 
 struct SwiftUIViewAF_Previews: PreviewProvider {

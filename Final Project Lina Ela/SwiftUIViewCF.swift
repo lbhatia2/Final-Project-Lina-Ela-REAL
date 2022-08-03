@@ -8,50 +8,46 @@
 import SwiftUI
 
 struct SwiftUIViewCF: View {
+    private var numberOfImagesT = 3
+    private var numberOfImagesF = 3
     var body: some View {
         VStack{
-        Text(" Popular Foods ")
-                .font(.title)
+            Text(" Tourist Attractions ")
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
-                .padding()
-    
-        Spacer()
-            
-        Text("Avacado Toast")
-        Image("at")
-                .resizable()
-
-        Text(" Pizza ")
-        Image("pizza")
-                .resizable()
-            
-        Text(" Burger ")
-        Image("innout")
-                .resizable()
-        Spacer()
-            
-            VStack{
-                Text("Tourist Atrractions")
-                    .font(.title)
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImagesT) {num in Image("CT\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
                     .padding()
-                    .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
-                    .padding()
-                
-                Text("Disneyland")
-                Image("disney")
-                        .resizable()
-                
-                Text("Golden Gate Bridge")
-                Image("ggb")
-                        .resizable()
-                
-                Text("Yosemite")
-                Image("yosemite")
-                    .resizable()
-                
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
             }
-                
+            Spacer()
+            
+            Text(" Popular Foods")
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 5).fill(.yellow))
+            GeometryReader { proxy in
+                TabView {
+                    ForEach(0..<numberOfImagesF) {num in Image("CF\(num)")
+                            .resizable()
+                            .scaledToFill()
+                            .overlay(Color.black.opacity(0.2))
+                            .tag(num)
+                    }
+                }.tabViewStyle(PageTabViewStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .padding()
+                    .frame(width: proxy.size.width, height: proxy.size.height / 1)
+            }
+            
+           Spacer()
         }
     }
 }
@@ -61,3 +57,7 @@ struct SwiftUIViewCF_Previews: PreviewProvider {
         SwiftUIViewCF()
     }
 }
+
+
+
+

@@ -10,10 +10,9 @@ import SwiftUI
 struct SwiftUIViewFood: View {
     @State private var locations = ""
     var body: some View {
-        NavigationView{
-            VStack{
-                Text("Click on the location you would like to see popular foods for")
-                
+        VStack{
+            Text("Popular Foods and Tourist Attractions")
+            Group {
                 NavigationLink(destination: {
                     SwiftUIViewICEF()
                 }, label: {
@@ -26,98 +25,97 @@ struct SwiftUIViewFood: View {
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewNYF()
+                    SwiftUIViewNYF()
                 }, label: {
                     Text("New York Food")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                     
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewAF()
+                    SwiftUIViewAF()
                 }, label: {
                     Text("Alaska")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                     
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewMF()
+                    SwiftUIViewMF()
                 }, label: {
                     Text("Michigan")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                     
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewColF()
+                    SwiftUIViewColF()
                 }, label: {
                     Text("Columbia")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                     
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewCUBAF()
+                    SwiftUIViewCUBAF()
                 }, label: {
                     Text("Cuba")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                     
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewTF()
+                    SwiftUIViewTF()
                 }, label: {
                     Text("Thailand")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                     
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewCF()
+                    SwiftUIViewCF()
                 }, label: {
                     Text("California")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                     
                 })
                 
                 NavigationLink(destination: {
-                SwiftUIViewBBF()
+                    SwiftUIViewBBF()
                 }, label: {
                     Text("Bora Bora")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                            .font(.body)
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
-                    
+                        .font(.body)
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
                 })
-                
-                
-                
             }
+            Spacer()
         }
     }
+    
+    
 }
 
 
