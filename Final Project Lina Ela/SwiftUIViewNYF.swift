@@ -18,16 +18,16 @@ struct SwiftUIViewNYF: View {
     
         Spacer()
             
-        Text(" Mahi Mahi Fish Dish")
-        Image("mahimahi")
+        Text("Bagels")
+        Image("bagels")
                 .resizable()
 
-        Text(" Tahitian Vanilla Pana Cotta ")
-        Image("pc")
+        Text("Pizza")
+        Image("NYpizza")
                 .resizable()
             
-        Text(" Sushi ")
-        Image("sushi")
+        Text("Clam Chowder")
+        Image("cc")
                 .resizable()
         Spacer()
                 

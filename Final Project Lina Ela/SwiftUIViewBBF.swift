@@ -30,6 +30,19 @@ struct SwiftUIViewBBF: View {
         Image("sushi")
                 .resizable()
         Spacer()
+            
+            HStack{
+                Text("Tourist Atrractions")
+                    .font(.title)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 5).fill(.pink))
+                    .padding()
+                
+                Text("")
+                Image("mahimahi")
+                        .resizable()
+                
+            }
                 
         }
     }

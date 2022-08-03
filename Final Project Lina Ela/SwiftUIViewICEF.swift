@@ -18,16 +18,16 @@ struct SwiftUIViewICEF: View {
     
         Spacer()
             
-        Text(" Mahi Mahi Fish Dish")
-        Image("mahimahi")
+        Text("Icelandic Meat Soup")
+        Image("IMS")
                 .resizable()
 
-        Text(" Tahitian Vanilla Pana Cotta ")
-        Image("pc")
+        Text("Skyr Yogurt")
+        Image("yogurt")
                 .resizable()
             
-        Text(" Sushi ")
-        Image("sushi")
+        Text("Ice Cream")
+        Image("icecream")
                 .resizable()
         Spacer()
                 
