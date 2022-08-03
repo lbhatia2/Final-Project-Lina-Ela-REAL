@@ -15,6 +15,15 @@
 		B096AF3D28982E3000A4E184 /* SwiftUIViewFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF3C28982E3000A4E184 /* SwiftUIViewFood.swift */; };
 		B096AF3F28982E4300A4E184 /* SwiftUIViewAttractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF3E28982E4300A4E184 /* SwiftUIViewAttractions.swift */; };
 		B096AF4128982E4E00A4E184 /* SwiftUIViewPackingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF4028982E4E00A4E184 /* SwiftUIViewPackingList.swift */; };
+		B096AF652899AF0E00A4E184 /* SwiftUIViewBBF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF642899AF0E00A4E184 /* SwiftUIViewBBF.swift */; };
+		B096AF672899AF2300A4E184 /* SwiftUIViewCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF662899AF2300A4E184 /* SwiftUIViewCF.swift */; };
+		B096AF692899AF3600A4E184 /* SwiftUIViewTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF682899AF3600A4E184 /* SwiftUIViewTF.swift */; };
+		B096AF6B2899AF4A00A4E184 /* SwiftUIViewCUBAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF6A2899AF4A00A4E184 /* SwiftUIViewCUBAF.swift */; };
+		B096AF6D2899AF5700A4E184 /* SwiftUIViewColF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF6C2899AF5700A4E184 /* SwiftUIViewColF.swift */; };
+		B096AF6F2899AF6900A4E184 /* SwiftUIViewMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF6E2899AF6900A4E184 /* SwiftUIViewMF.swift */; };
+		B096AF712899AF7900A4E184 /* SwiftUIViewAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF702899AF7900A4E184 /* SwiftUIViewAF.swift */; };
+		B096AF732899AF8F00A4E184 /* SwiftUIViewNYF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF722899AF8F00A4E184 /* SwiftUIViewNYF.swift */; };
+		B096AF752899AF9D00A4E184 /* SwiftUIViewICEF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096AF742899AF9D00A4E184 /* SwiftUIViewICEF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,15 @@
 		B096AF3C28982E3000A4E184 /* SwiftUIViewFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFood.swift; sourceTree = "<group>"; };
 		B096AF3E28982E4300A4E184 /* SwiftUIViewAttractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAttractions.swift; sourceTree = "<group>"; };
 		B096AF4028982E4E00A4E184 /* SwiftUIViewPackingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewPackingList.swift; sourceTree = "<group>"; };
+		B096AF642899AF0E00A4E184 /* SwiftUIViewBBF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBBF.swift; sourceTree = "<group>"; };
+		B096AF662899AF2300A4E184 /* SwiftUIViewCF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCF.swift; sourceTree = "<group>"; };
+		B096AF682899AF3600A4E184 /* SwiftUIViewTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewTF.swift; sourceTree = "<group>"; };
+		B096AF6A2899AF4A00A4E184 /* SwiftUIViewCUBAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCUBAF.swift; sourceTree = "<group>"; };
+		B096AF6C2899AF5700A4E184 /* SwiftUIViewColF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewColF.swift; sourceTree = "<group>"; };
+		B096AF6E2899AF6900A4E184 /* SwiftUIViewMF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewMF.swift; sourceTree = "<group>"; };
+		B096AF702899AF7900A4E184 /* SwiftUIViewAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAF.swift; sourceTree = "<group>"; };
+		B096AF722899AF8F00A4E184 /* SwiftUIViewNYF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNYF.swift; sourceTree = "<group>"; };
+		B096AF742899AF9D00A4E184 /* SwiftUIViewICEF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewICEF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,15 @@
 				B096AF4028982E4E00A4E184 /* SwiftUIViewPackingList.swift */,
 				B096AF3E28982E4300A4E184 /* SwiftUIViewAttractions.swift */,
 				B096AF3C28982E3000A4E184 /* SwiftUIViewFood.swift */,
+				B096AF742899AF9D00A4E184 /* SwiftUIViewICEF.swift */,
+				B096AF722899AF8F00A4E184 /* SwiftUIViewNYF.swift */,
+				B096AF702899AF7900A4E184 /* SwiftUIViewAF.swift */,
+				B096AF6E2899AF6900A4E184 /* SwiftUIViewMF.swift */,
+				B096AF6C2899AF5700A4E184 /* SwiftUIViewColF.swift */,
+				B096AF6A2899AF4A00A4E184 /* SwiftUIViewCUBAF.swift */,
+				B096AF682899AF3600A4E184 /* SwiftUIViewTF.swift */,
+				B096AF662899AF2300A4E184 /* SwiftUIViewCF.swift */,
+				B096AF642899AF0E00A4E184 /* SwiftUIViewBBF.swift */,
 				B096AF3828982E0700A4E184 /* SwiftUIViewLocationPicker.swift */,
 				B096AF2E2898163A00A4E184 /* Assets.xcassets */,
 				B096AF302898163A00A4E184 /* Preview Content */,
@@ -150,10 +177,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B096AF3928982E0700A4E184 /* SwiftUIViewLocationPicker.swift in Sources */,
+				B096AF692899AF3600A4E184 /* SwiftUIViewTF.swift in Sources */,
 				B096AF3F28982E4300A4E184 /* SwiftUIViewAttractions.swift in Sources */,
 				B096AF2D2898163900A4E184 /* ContentView.swift in Sources */,
+				B096AF732899AF8F00A4E184 /* SwiftUIViewNYF.swift in Sources */,
+				B096AF652899AF0E00A4E184 /* SwiftUIViewBBF.swift in Sources */,
 				B096AF4128982E4E00A4E184 /* SwiftUIViewPackingList.swift in Sources */,
+				B096AF752899AF9D00A4E184 /* SwiftUIViewICEF.swift in Sources */,
+				B096AF712899AF7900A4E184 /* SwiftUIViewAF.swift in Sources */,
+				B096AF6D2899AF5700A4E184 /* SwiftUIViewColF.swift in Sources */,
+				B096AF6F2899AF6900A4E184 /* SwiftUIViewMF.swift in Sources */,
+				B096AF672899AF2300A4E184 /* SwiftUIViewCF.swift in Sources */,
 				B096AF3D28982E3000A4E184 /* SwiftUIViewFood.swift in Sources */,
+				B096AF6B2899AF4A00A4E184 /* SwiftUIViewCUBAF.swift in Sources */,
 				B096AF2B2898163900A4E184 /* Final_Project_Lina_ElaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

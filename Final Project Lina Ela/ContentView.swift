@@ -31,17 +31,17 @@ struct ContentView: View {
                 
             })
             
-            NavigationLink(destination: {
-            SwiftUIViewAirBNBs()
-            }, label: {
-                Text("AirBnB's and Hotels")
-                    .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
-                        .font(.body)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.546, blue: 0.453)))
+           // NavigationLink(destination: {
+           // SwiftUIViewAirBNBs()
+           // }, label: {
+               // Text("AirBnB's and Hotels")
+                 //   .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
+                   //     .font(.body)
+                   //     .padding()
+                     //   .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.546, blue: 0.453)))
                 
-            })
-            
+            //})
+        
             NavigationLink(destination: {
             SwiftUIViewFood()
             }, label: {
