@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct SwiftUIViewLocationPicker: View {
-    var climates = ["Hot", "Room", "Warm"]
+    var climates = ["Hot", "Room", "Cold"]
     var styles = ["Relax", "Explore"]
     var types = ["City", "Beach"]
+    
     @State private var climate = ""
     @State private var style = ""
     @State private var type = ""
     @State private var location = ""
     
     var body: some View {
+        
         VStack {
+            Text("Lets pick your location")
+            Image("Plane")
+                .resizable()
+                .padding()
+            Spacer()
             HStack {
                 Text(" Pick a Climate ")
                     .background(RoundedRectangle(cornerRadius: 5).fill(Color(red: 0.756, green: 0.862, blue: 0.882)))
@@ -64,8 +71,13 @@ struct SwiftUIViewLocationPicker: View {
                 }
             }
         }
+        
         Text("Selected location: \(location)")
+            .padding()
+        
     }
+    
+    
     
     func findLocation() {
         if climate.count > 0 && style.count > 0 && type.count > 0 {
@@ -74,53 +86,67 @@ struct SwiftUIViewLocationPicker: View {
                     if type == "Beach" {
                         location = "Bora Bora"  // Hot, Relax, Beach
                     }
-                    location = "California"          // Hot, Relax, City
+                    else {
+                        location = "California"  // Hot, Relax, City
+                    }
                 }
                 else {
                     if type == "Beach" {
                         location = "Thailand"   // Hot, Explore, Beach
                     }
-                    location = "Cuba"           // Hot, Explore, City
-                }
-            }
-            else if climate == "Room" {
-                if style == "Relax" {
-                    if type == "Beach" {
-                        location = "California" // Room, Relax, Beach
+                    else{
+                        location = "Cuba"           // Hot, Explore, City
                     }
-                    location = "California"     // Room, Relax, City
                 }
                 else {
-                    if type == "Beach" {
-                        location = "Michigan"   // Room, Explore, Beach
+                    if climate == "Room" {
+                        if style == "Relax" {
+                            if type == "Beach" {
+                                location = "California" // Room, Relax, Beach
+                            }
+                        }
+                        else{
+                            location = "California"     // Room, Relax, City
+                        }
                     }
-                    location = "Columbia"       // Room, Explore, City
-                }
-            }
-            else {
-                if style == "Relax" {
-                    if type == "Beach" {
-                        location = "California"      // Cold, Relax, Beach
+                    else {
+                        if type == "Beach" {
+                            location = "Michigan"   // Room, Explore, Beach
+                        }
+                        else{
+                            location = "Columbia"       // Room, Explore, City
+                        }
                     }
-                    location = "Alaska"         // Cold, Relax, City
                 }
                 else {
-                    if type == "Beach" {
-                        location = "Iceland"    // Cold, Explore, Beach
+                    if style == "Relax" {
+                        if type == "Beach" {
+                            location = "California"      // Cold, Relax, Beach
+                        }
+                        else{
+                            location = "Alaska"         // Cold, Relax, City
+                        }
                     }
-                    location = "NYC"       // Cold, Explore, City
+                    else {
+                        if type == "Beach" {
+                            location = "Iceland"    // Cold, Explore, Beach
+                        }
+                        else{
+                            location = "NYC"       // Cold, Explore, City
+                        }
+                    }
                 }
             }
         }
+        
+        
+        
     }
     
     
-    
-}
-
-
-struct SwiftUIViewLocationPicker_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIViewLocationPicker()
+    struct SwiftUIViewLocationPicker_Previews: PreviewProvider {
+        static var previews: some View {
+            SwiftUIViewLocationPicker()
+        }
     }
 }

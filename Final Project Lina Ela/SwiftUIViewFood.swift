@@ -27,7 +27,7 @@ struct SwiftUIViewFood: View {
                 NavigationLink(destination: {
                     SwiftUIViewNYF()
                 }, label: {
-                    Text("New York Food")
+                    Text("New York")
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
