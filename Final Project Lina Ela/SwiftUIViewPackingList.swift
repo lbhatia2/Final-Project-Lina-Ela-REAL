@@ -14,7 +14,7 @@ struct checkListItem: Identifiable{
 }
 
 struct SwiftUIViewPackingList: View {
-    @State var checklistItems = [checkListItem(name: "5 outfits", isChecked: false), checkListItem(name: "3 swimsuits", isChecked: false), checkListItem(name: "phone", isChecked: false), checkListItem(name: "laptop", isChecked: false), checkListItem(name: "toiletries", isChecked: false), checkListItem(name: "raincoat", isChecked: false)]
+    @State var checklistItems = [checkListItem(name: "5 Outfits", isChecked: false), checkListItem(name: "3 Swimsuits or Warm Layers", isChecked: false), checkListItem(name: "Phone", isChecked: false), checkListItem(name: "Laptop", isChecked: false), checkListItem(name: "Toiletries", isChecked: false), checkListItem(name: "Raincoat", isChecked: false)]
     
     var body: some View {
       NavigationView {

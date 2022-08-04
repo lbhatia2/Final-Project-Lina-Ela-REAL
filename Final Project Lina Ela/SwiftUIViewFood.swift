@@ -12,6 +12,14 @@ struct SwiftUIViewFood: View {
     var body: some View {
         VStack{
             Text("Popular Foods and Tourist Attractions")
+                .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.761, green: 0.862, blue: 0.933)))
+            Image("travel")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .padding(.top, 20)
+
+
             Group {
                 NavigationLink(destination: {
                     SwiftUIViewICEF()
@@ -20,7 +28,7 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.112, green: 0.446, blue: 0.615)))
                     
                 })
                 
@@ -31,7 +39,7 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.694, green: 0.836, blue: 0.452)))
                     
                 })
                 
@@ -42,7 +50,7 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.799, blue: 0.35)))
                     
                 })
                 
@@ -53,7 +61,7 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.976, green: 0.577, blue: 0.596)))
                     
                 })
                 
@@ -64,7 +72,7 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.843, green: 0.774, blue: 0.675)))
                     
                 })
                 
@@ -86,7 +94,7 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.843, green: 0.774, blue: 0.675)))
                     
                 })
                 
@@ -97,7 +105,7 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.976, green: 0.577, blue: 0.596)))
                     
                 })
                 
@@ -108,7 +116,8 @@ struct SwiftUIViewFood: View {
                         .foregroundColor(Color.init(red: 255, green: 200, blue: 150))
                         .font(.body)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.163, green: 0.537, blue: 0.731)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.936, green: 0.799, blue: 0.35)))
+                        .padding()
                 })
             }
             Spacer()

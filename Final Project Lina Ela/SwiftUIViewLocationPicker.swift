@@ -11,7 +11,6 @@ struct SwiftUIViewLocationPicker: View {
     var climates = ["Hot", "Room", "Cold"]
     var styles = ["Relax", "Explore"]
     var types = ["City", "Beach"]
-    
     @State private var climate = ""
     @State private var style = ""
     @State private var type = ""
@@ -20,7 +19,7 @@ struct SwiftUIViewLocationPicker: View {
     var body: some View {
         
         VStack {
-            Text("Lets pick your location")
+            Text("Location Picker")
             Image("Plane")
                 .resizable()
                 .padding()
@@ -73,7 +72,6 @@ struct SwiftUIViewLocationPicker: View {
         }
         
         Text("Selected location: \(location)")
-            .padding()
         
     }
     
@@ -87,60 +85,55 @@ struct SwiftUIViewLocationPicker: View {
                         location = "Bora Bora"  // Hot, Relax, Beach
                     }
                     else {
-                        location = "California"  // Hot, Relax, City
+                        location = "California" // Hot, Relax, City
                     }
                 }
                 else {
                     if type == "Beach" {
                         location = "Thailand"   // Hot, Explore, Beach
                     }
+                    else {
+                        location = "Cuba"       // Hot, Explore, City
+                    }
+                }
+            }
+            else if climate == "Room" {
+                if style == "Relax" {
+                    if type == "Beach" {
+                        location = "California" // Room, Relax, Beach
+                    }
+                    else {
+                        location = "California" // Room, Relax, City
+                    }
+                }
+                else {
+                    if type == "Beach" {
+                        location = "Michigan"   // Room, Explore, Beach
+                    }
                     else{
-                        location = "Cuba"           // Hot, Explore, City
+                        location = "Columbia"   // Room, Explore, City
+                    }
+                }
+            }
+            else {
+                if style == "Relax" {
+                    if type == "Beach" {
+                        location = "Japan"      // Cold, Relax, Beach
+                    }
+                    else {
+                        location = "Alaska"     // Cold, Relax, City
                     }
                 }
                 else {
-                    if climate == "Room" {
-                        if style == "Relax" {
-                            if type == "Beach" {
-                                location = "California" // Room, Relax, Beach
-                            }
-                        }
-                        else{
-                            location = "California"     // Room, Relax, City
-                        }
+                    if type == "Beach" {
+                        location = "Iceland"    // Cold, Explore, Beach
                     }
                     else {
-                        if type == "Beach" {
-                            location = "Michigan"   // Room, Explore, Beach
-                        }
-                        else{
-                            location = "Columbia"       // Room, Explore, City
-                        }
-                    }
-                }
-                else {
-                    if style == "Relax" {
-                        if type == "Beach" {
-                            location = "California"      // Cold, Relax, Beach
-                        }
-                        else{
-                            location = "Alaska"         // Cold, Relax, City
-                        }
-                    }
-                    else {
-                        if type == "Beach" {
-                            location = "Iceland"    // Cold, Explore, Beach
-                        }
-                        else{
-                            location = "NYC"       // Cold, Explore, City
-                        }
+                        location = "NYC"        // Cold, Explore, City
                     }
                 }
             }
         }
-        
-        
-        
     }
     
     
@@ -150,3 +143,6 @@ struct SwiftUIViewLocationPicker: View {
         }
     }
 }
+
+
+
